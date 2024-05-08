@@ -44,21 +44,15 @@ const IndustryFocus = () => {
           <Card
             key={index}
             style={{
-              width:
-                index === 0 || index === industryFocusArray.length - 1
-                  ? "36rem"
-                  : "18rem",
               position: "relative",
               marginBottom: "2rem",
               border: "none",
             }}
-            className="card-responsive"
+            className={`card-responsive px-1 ${
+              index === 0 || index === industryFocusArray.length - 1 ? "width-50" : "width-25"
+            }`}
           >
-            <Card.Img
-              variant="top"
-              src={item.image}
-              style={{ borderRadius: "10px" }}
-            />
+            <Card.Img variant="top" src={item.image} style={{ borderRadius: "10px" }} />
             <div
               style={{
                 position: "absolute",
@@ -68,13 +62,11 @@ const IndustryFocus = () => {
                 textAlign: "left",
                 color: "white",
                 width: "100%",
-                padding: "1rem",
               }}
+              className="card-div"
             >
               <Card.Title>{item.heading}</Card.Title>
-              <Card.Text style={{ fontSize: "13px" }}>
-                {item.subtitle}
-              </Card.Text>
+              <Card.Text style={{ fontSize: "13px" }}>{item.subtitle}</Card.Text>
               <Card.Link href="#" className="text-white">
                 Read More
               </Card.Link>

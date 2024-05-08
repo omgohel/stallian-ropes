@@ -43,6 +43,7 @@ function App() {
       <div className="contact-responsive" ref={contactUsRef}>
         <ContactUs />
       </div>
+
       <div className="pt-5">
         <Footer
           chooseUsRef={chooseUsRef}

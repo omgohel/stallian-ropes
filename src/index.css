@@ -105,9 +105,6 @@ code {
 }
 
 /* Counter Css */
-.counter-responsive {
-  padding: 3rem;
-}
 .custom-card {
   width: 18rem;
   border: none !important;
@@ -171,8 +168,23 @@ code {
   padding: 3rem !important;
 }
 
+.width-50{
+  width: 50%;
+}
+
+.width-25{
+  width: 25%;
+}
+
 /* Media query for medium screens */
 @media (max-width: 576px) {
+  .width-50{
+    width: 100%;
+  }
+  
+  .width-25{
+    width: 50%;
+  }
   .carousel-image {
     height: 300px;
   }
@@ -304,6 +316,10 @@ code {
     height: 455px;
   }
 
+  .card-div{
+    padding-bottom: 0rem !important;
+  }
+
   .nav-button {
     width: 120px;
     height: 40px;
@@ -349,23 +365,32 @@ code {
 
   .industry-responsive {
     padding-bottom: 0rem !important;
+    padding-top: 0rem !important;
     .fw-bold {
       font-size: 18px !important;
     }
     .industry-inner {
       margin-top: 2rem !important;
       padding: 0% !important;
-      .card-text {
-        margin-bottom: 0% !important;
-      }
-      .text-white {
-        font-size: 16px !important;
-      }
     }
     .industry-para {
       padding-bottom: 0rem !important;
     }
   }
+
+
+  .card-responsive{
+    .card-title{
+      font-size: 12px !important;
+    }
+    .card-text{
+      font-size: 10px !important;
+      margin-bottom: 0rem !important;
+    }
+    .text-white{
+      font-size: 10px !important;
+    }
+    }
 
   .counter-responsive {
     padding: 1rem 0rem 0rem 0rem !important;
@@ -391,26 +416,119 @@ code {
 
 /* Media query for large screens */
 @media (min-width: 769px) and (max-width: 992px) {
-  .brand-image-overlay {
-    top: 50%;
-    left: 11%;
-    width: 110px !important;
-    height: 110px !important;
+  .overlay-navbar {
+    .container {
+      .navbar-brand {
+        .brand-image-overlay {
+          top: 50%;
+          left: 9%;
+          width: 110px !important;
+          height: 110px !important;
+        }
+      }
+    }
   }
 
   .carousel-image {
     height: 560px;
   }
+
+  .service-responsive {
+    .service-inner {
+      padding: 0% !important;
+      .card-style {
+        width: 15rem !important;
+        height: 11rem !important;
+        .button-class {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .industry-responsive {
+    padding-bottom: 0rem !important;
+    .fw-bold {
+      font-size: 18px !important;
+    }
+    .industry-inner {
+      margin-top: 2rem !important;
+      padding: 0% !important;
+    }
+    .industry-para {
+      padding-bottom: 0rem !important;
+    }
+  }
+
+  .choose-responsive {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .choose-us-inner {
+    padding-bottom: 0rem !important;
+  }
+
+  .contact-responsive {
+    padding-bottom: 0rem;
+  }
+
+
+  .card-responsive{
+    .card-title{
+      font-size: 16px !important;
+    }
+    .card-text{
+      font-size: 14px !important;
+    }
+    .text-white{
+      font-size: 12px !important;
+    }
+    }
+
 }
 
 /* Media query for extra large screens */
-@media (min-width: 992px) and (max-width: 1200px) {
-  .brand-image-overlay {
-    width: 120px !important;
-    height: 120px !important;
+@media (min-width: 993px) and (max-width: 1200px) {
+  .carousel-image {
+    height: 630px;
   }
 
-  .carousel-image {
-    height: 620px;
+  .service-responsive {
+    .service-inner {
+      padding: 0% !important;
+      .card-style {
+        width: 10rem !important;
+        height: 11rem !important;
+        .button-class {
+          font-size: 13px !important;
+        }
+      }
+    }
   }
+
+  .industry-responsive {
+    padding-bottom: 0rem !important;
+    .fw-bold {
+      font-size: 18px !important;
+    }
+    .industry-inner {
+      margin-top: 2rem !important;
+      padding: 0% !important;
+    }
+    .industry-para {
+      padding-bottom: 0rem !important;
+    }}
+
+  .choose-responsive {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .choose-us-inner {
+    padding-bottom: 0rem !important;
+  }
+
+  .contact-responsive {
+    padding-bottom: 0rem;
+  }
+
 }
