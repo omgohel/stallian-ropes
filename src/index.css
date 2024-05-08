@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+code {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* Navbar Css */
+/* Hamburger icon */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Cross icon */
+.navbar-toggler.toggled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M8 8l16 16M24 8l-16 16'/%3E%3C/svg%3E");
+}
+
+.overlay-navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar is on top of the carousel */
+  padding: 3rem; /* Adjust padding as needed */
+}
+
+.navbar-overlay {
+  top: 0;
+}
+
+.brand-image-overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 9.5%;
+  transform: translate(-50%, -50%);
+}
+
+.black-bold-text {
+  font-weight: 600 !important;
+  color: gray !important;
+}
+
+.black-font {
+  color: black !important;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  border: none;
+}
+
+.black-bold-text:hover {
+  color: black !important;
+}
+
+.button-class {
+  color: white !important;
+  background-color: #006bb5 !important;
+  border: none !important;
+}
+
+.nav-link:hover {
+  color: #006bb5 !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #006bb5 !important;
+}
+
+/* Caresoul Css */
+.carousel-image {
+  height: 780px;
+}
+
+.custom-caresoul .carousel-indicators {
+  display: none !important;
+}
+
+/* Service Css */
+.card-style {
+  border: none !important;
+}
+
+/* Rope caresouls Css */
+.rope-caresouls .carousel-control-prev,
+.rope-caresouls .carousel-control-next {
+  display: none !important;
+}
+
+.rope-caresouls .carousel-inner {
+  height: 500px !important;
+}
+
+.industry-responsive {
+  padding: 3rem;
+}
+
+/* Counter Css */
+.counter-responsive {
+  padding: 3rem;
+}
+.custom-card {
+  width: 18rem;
+  border: none !important;
+  text-align: center;
+}
+
+.custom-card-border {
+  border-right: 1px solid #d0cccc !important; /* Add a vertical border on the right side */
+  border-radius: 0% !important;
+}
+
+.choose-responsive {
+  padding: 3rem !important;
+}
+
+/* Contact-us Css */
+.contact-responsive {
+  padding: 3rem;
+}
+
+.form-label {
+  color: #006bb5;
+  font-weight: 600;
+}
+
+.custom-input {
+  background-color: #e3eef0 !important;
+  border-radius: 0% !important;
+}
+
+/* Footer Css */
+.footer-bg {
+  background-color: black;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.font-white {
+  color: white;
+}
+
+.service-item.first {
+  border-right: 1px solid #315481;
+  border-bottom: 1px solid #315481;
+}
+
+.service-item.second {
+  border-left: 1px solid #315481;
+  border-right: 1px solid #315481;
+  border-bottom: 1px solid #315481;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.industry-inner {
+  padding: 3rem !important;
+}
+
+.choose-us-inner {
+  padding: 3rem !important;
+}
+
+/* Media query for medium screens */
+@media (max-width: 576px) {
+  .carousel-image {
+    height: 300px;
+  }
+
+  .carousel-control-prev {
+    display: none !important;
+  }
+
+  .carousel-control-next {
+    display: none !important;
+  }
+
+  .nav-button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px !important;
+    margin-right: 23px;
+    margin-top: 10px;
+  }
+
+  .overlay-navbar {
+    .navbar-overlay {
+      padding: 0.5rem !important;
+    }
+    .container {
+      .navbar-brand {
+        .brand-image-overlay {
+          top: 50%;
+          left: 18%;
+          width: 80px !important;
+          height: 80px !important;
+        }
+      }
+    }
+  }
+
+  .carousel-image {
+    height: 255px;
+  }
+
+  .service-responsive {
+    .service-inner {
+      padding: 0% !important;
+      .card-style {
+        width: 8rem !important;
+        height: 11rem !important;
+        .button-class {
+          font-size: 12px !important;
+        }
+      }
+    }
+    .service-para {
+      padding: 1.5rem 0rem 0rem 0rem !important;
+      .service-details {
+        padding: 0rem 0rem 0rem 0rem !important;
+      }
+    }
+  }
+
+  .industry-responsive {
+    padding-bottom: 0rem !important;
+    .fw-bold {
+      font-size: 16px !important;
+    }
+    .industry-inner {
+      margin-top: 2rem !important;
+      padding: 0% !important;
+      .card-text {
+        margin-bottom: 0% !important;
+      }
+      .text-white {
+        font-size: 12px !important;
+      }
+    }
+    .industry-para {
+      padding-bottom: 0rem !important;
+    }
+  }
+
+  .counter-responsive {
+    .counter-inner {
+      .card-img {
+        width: 50px !important;
+        height: 50px !important;
+      }
+      h4 {
+        font-size: 10px !important;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: 18px !important;
+      }
+    }
+    padding: 1rem 0rem 0rem 0rem !important;
+  }
+
+  .rope-caresouls .carousel-inner {
+    height: 255px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+
+  .choose-responsive {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+    padding-right: 1rem !important;
+  }
+  .choose-us-inner {
+    padding-bottom: 0rem !important;
+  }
+
+  .contact-responsive {
+    padding: 1rem;
+    .contact-form {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .carousel-image {
+    height: 455px;
+  }
+
+  .nav-button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px !important;
+    margin-right: 23px;
+    margin-top: 10px;
+  }
+
+  .overlay-navbar {
+    .navbar-overlay {
+      padding: 0.5rem !important;
+    }
+    .container {
+      .navbar-brand {
+        .brand-image-overlay {
+          top: 50%;
+          left: 12%;
+          width: 80px !important;
+          height: 80px !important;
+        }
+      }
+    }
+  }
+
+  .service-responsive {
+    .service-inner {
+      padding: 0% !important;
+      .card-style {
+        width: 12rem !important;
+        height: 11rem !important;
+        .button-class {
+          font-size: 14px !important;
+        }
+      }
+    }
+    .service-para {
+      padding: 1.5rem 0rem 0rem 0rem !important;
+      .service-details {
+        padding: 0rem 0rem 0rem 0rem !important;
+      }
+    }
+  }
+
+  .industry-responsive {
+    padding-bottom: 0rem !important;
+    .fw-bold {
+      font-size: 18px !important;
+    }
+    .industry-inner {
+      margin-top: 2rem !important;
+      padding: 0% !important;
+      .card-text {
+        margin-bottom: 0% !important;
+      }
+      .text-white {
+        font-size: 16px !important;
+      }
+    }
+    .industry-para {
+      padding-bottom: 0rem !important;
+    }
+  }
+
+  .counter-responsive {
+    padding: 1rem 0rem 0rem 0rem !important;
+  }
+
+  .choose-responsive {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+    padding-right: 1rem !important;
+  }
+  .choose-us-inner {
+    padding-bottom: 0rem !important;
+  }
+
+  .contact-responsive {
+    padding: 1rem;
+    .contact-form {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+  .brand-image-overlay {
+    top: 50%;
+    left: 11%;
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .carousel-image {
+    height: 560px;
+  }
+}
+
+/* Media query for extra large screens */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .brand-image-overlay {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .carousel-image {
+    height: 620px;
+  }
+}
