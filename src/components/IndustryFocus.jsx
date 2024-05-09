@@ -36,7 +36,7 @@ const IndustryFocus = () => {
   ];
 
   return (
-    <>
+    <div id="infrastructure">
       <h3>World Class Standards For In-House Manufacturing & Research</h3>
       <h2 className="fw-bold">Innovation Centric Industry Focus</h2>
       <div className="d-flex flex-wrap justify-content-around industry-inner">
@@ -49,10 +49,16 @@ const IndustryFocus = () => {
               border: "none",
             }}
             className={`card-responsive px-1 ${
-              index === 0 || index === industryFocusArray.length - 1 ? "width-50" : "width-25"
+              index === 0 || index === industryFocusArray.length - 1
+                ? "width-50"
+                : "width-25"
             }`}
           >
-            <Card.Img variant="top" src={item.image} style={{ borderRadius: "10px" }} />
+            <Card.Img
+              variant="top"
+              src={item.image}
+              style={{ borderRadius: "10px" }}
+            />
             <div
               style={{
                 position: "absolute",
@@ -66,7 +72,9 @@ const IndustryFocus = () => {
               className="card-div"
             >
               <Card.Title>{item.heading}</Card.Title>
-              <Card.Text style={{ fontSize: "13px" }}>{item.subtitle}</Card.Text>
+              <Card.Text style={{ fontSize: "13px" }}>
+                {item.subtitle}
+              </Card.Text>
               <Card.Link href="#" className="text-white">
                 Read More
               </Card.Link>
@@ -74,7 +82,7 @@ const IndustryFocus = () => {
           </Card>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

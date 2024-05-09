@@ -168,21 +168,45 @@ code {
   padding: 3rem !important;
 }
 
-.width-50{
+.width-50 {
   width: 50%;
 }
 
-.width-25{
+.width-25 {
   width: 25%;
+}
+
+/* Product page css*/
+.rope-responsive {
+  .custom-caresoul {
+    margin-top: 0rem !important;
+  }
+  .carousel-inner {
+    height: 700px !important;
+  }
+}
+
+.product-carousel {
+  .carousel-control-prev {
+    display: none !important;
+  }
+  .carousel-control-next {
+    display: none !important;
+  }
+}
+
+.product-image {
+  height: 120px;
+  width: 120px;
 }
 
 /* Media query for medium screens */
 @media (max-width: 576px) {
-  .width-50{
+  .width-50 {
     width: 100%;
   }
-  
-  .width-25{
+
+  .width-25 {
     width: 50%;
   }
   .carousel-image {
@@ -316,7 +340,7 @@ code {
     height: 455px;
   }
 
-  .card-div{
+  .card-div {
     padding-bottom: 0rem !important;
   }
 
@@ -378,19 +402,18 @@ code {
     }
   }
 
-
-  .card-responsive{
-    .card-title{
+  .card-responsive {
+    .card-title {
       font-size: 12px !important;
     }
-    .card-text{
+    .card-text {
       font-size: 10px !important;
       margin-bottom: 0rem !important;
     }
-    .text-white{
+    .text-white {
       font-size: 10px !important;
     }
-    }
+  }
 
   .counter-responsive {
     padding: 1rem 0rem 0rem 0rem !important;
@@ -472,19 +495,17 @@ code {
     padding-bottom: 0rem;
   }
 
-
-  .card-responsive{
-    .card-title{
+  .card-responsive {
+    .card-title {
       font-size: 16px !important;
     }
-    .card-text{
+    .card-text {
       font-size: 14px !important;
     }
-    .text-white{
+    .text-white {
       font-size: 12px !important;
     }
-    }
-
+  }
 }
 
 /* Media query for extra large screens */
@@ -517,7 +538,8 @@ code {
     }
     .industry-para {
       padding-bottom: 0rem !important;
-    }}
+    }
+  }
 
   .choose-responsive {
     padding-top: 0rem !important;
@@ -530,5 +552,4 @@ code {
   .contact-responsive {
     padding-bottom: 0rem;
   }
-
 }

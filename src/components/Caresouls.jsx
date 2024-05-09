@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
 
 const CaresoulsComponent = () => {
   const caresoulArray = [
@@ -27,7 +26,7 @@ const CaresoulsComponent = () => {
   ];
 
   return (
-    <>
+    <div id="home">
       <Carousel interval={2000} fade>
         {caresoulArray.map((item, index) => (
           <Carousel.Item key={index}>
@@ -43,7 +42,7 @@ const CaresoulsComponent = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-    </>
+    </div>
   );
 };
 

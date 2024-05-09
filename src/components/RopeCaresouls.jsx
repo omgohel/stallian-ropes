@@ -4,10 +4,10 @@ import { Carousel } from "react-bootstrap";
 const RopeCaresouls = () => {
   const ropeCaresouls = [
     {
-      image: "/rope/rope1.webp",
+      image: "/rope/rope2.jpeg",
     },
     {
-      image: "/rope/rope2.jpeg",
+      image: "/rope/rope1.webp",
     },
   ];
 

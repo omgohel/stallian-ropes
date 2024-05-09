@@ -30,7 +30,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="row d-flex align-items-center">
+      <div id="contactUs" className="row d-flex align-items-center">
         <div className="col-lg-6 text-left">
           <h1 className="fw-bold">
             <span style={{ color: "#006BB5" }}>Contact</span> with us today

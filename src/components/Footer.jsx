@@ -1,20 +1,32 @@
 import React, { useCallback } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const Footer = ({ chooseUsRef, contactUsRef, industryFocusRef }) => {
-  const scrollToComponent = useCallback((ref) => {
-    if (ref && ref.current) {
-      const offsetTop = -140;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = ref.current.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition + offsetTop;
-
+const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const containsProducts = location.pathname.includes("products");
+  const scrolling = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
       window.scrollTo({
-        top: offsetPosition,
+        top: section.offsetTop,
         behavior: "smooth",
       });
     }
-  }, []);
+  };
+  const scrollToComponent = useCallback(
+    (sectionId) => {
+      if (containsProducts) {
+        navigate("/");
+        setTimeout(() => {
+          scrolling(sectionId);
+        }, 100);
+      } else {
+        scrolling(sectionId);
+      }
+    },
+    [containsProducts, navigate]
+  );
   return (
     <div className="footer-bg p-5">
       <div className="container">
@@ -33,19 +45,19 @@ const Footer = ({ chooseUsRef, contactUsRef, industryFocusRef }) => {
                 <h5 className="font-white fw-bold">Quick Links</h5>
                 <h6
                   className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToComponent(chooseUsRef)}
+                  onClick={() => scrollToComponent("about")}
                 >
                   About Us
                 </h6>
                 <h6
                   className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToComponent(industryFocusRef)}
+                  onClick={() => scrollToComponent("infrastructure")}
                 >
                   Infrastructure
                 </h6>
                 <h6
                   className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToComponent(contactUsRef)}
+                  onClick={() => scrollToComponent("contactUs")}
                 >
                   Contact Us
                 </h6>

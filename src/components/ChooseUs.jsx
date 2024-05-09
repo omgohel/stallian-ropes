@@ -17,7 +17,7 @@ const ChooseUs = () => {
     },
   ];
   return (
-    <div className="row d-flex align-items-center">
+    <div id="about" className="row d-flex align-items-center">
       <div className="col-lg-6 text-left choose-us-inner">
         <div>
           <h2>Why Choose Us</h2>
