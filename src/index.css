@@ -78,7 +78,7 @@ code {
 
 /* Caresoul Css */
 .carousel-image {
-  height: 780px;
+  height: 620px;
 }
 
 .custom-caresoul .carousel-indicators {
@@ -190,7 +190,7 @@ code {
     margin-top: 0rem !important;
   }
   .carousel-inner {
-    height: 700px !important;
+    height: 620px !important;
   }
 }
 
@@ -586,7 +586,7 @@ code {
 /* Media query for extra large screens */
 @media (min-width: 993px) and (max-width: 1200px) {
   .carousel-image {
-    height: 630px;
+    height: 500px;
   }
 
   .service-responsive {
