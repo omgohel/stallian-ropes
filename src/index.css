@@ -214,7 +214,7 @@ code {
 }
 
 .table-container {
-  max-height: 550px; /* Adjust the height as needed */
+  max-height: 543px; /* Adjust the height as needed */
 }
 
 /* Media query for medium screens */
@@ -484,7 +484,7 @@ code {
   }
 
   .table-container {
-    max-height: 300px; /* Adjust the height as needed */
+    max-height: 275px; /* Adjust the height as needed */
   }
   .font-size-small {
     font-size: 12px !important;
@@ -579,7 +579,7 @@ code {
   }
 
   .table-container {
-    max-height: 400px; /* Adjust the height as needed */
+    max-height: 385px; /* Adjust the height as needed */
   }
 }
 
@@ -634,7 +634,7 @@ code {
   }
 
   .table-container {
-    max-height: 450px; /* Adjust the height as needed */
+    max-height: 420px; /* Adjust the height as needed */
   }
 
   .width-100 {
