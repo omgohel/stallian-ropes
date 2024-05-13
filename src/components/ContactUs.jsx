@@ -19,7 +19,10 @@ const ContactUs = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      await axios.post("http://localhost:9000/sendmail", values);
+      await axios.post(
+        "https://stallian-ropes-backend.vercel.app/sendmail",
+        values
+      );
       resetForm();
       toast.success("Thankyou for contacting us!"); // Show success toast
     } catch (error) {
