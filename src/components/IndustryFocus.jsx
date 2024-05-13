@@ -64,7 +64,7 @@ const IndustryFocus = () => {
                 position: "absolute",
                 bottom: "0",
                 left: "0",
-                transform: "translate(5%, -10%)", // Adjust the translation as needed
+                transform: "translate(5%, -10%)",
                 textAlign: "left",
                 color: "white",
                 width: "100%",
