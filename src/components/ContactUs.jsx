@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import * as formik from "formik";
@@ -6,9 +6,12 @@ import * as yup from "yup";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS for toastify
+import Spinner from "react-bootstrap/Spinner";
 
 const ContactUs = () => {
   const { Formik } = formik;
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const schema = yup.object().shape({
     email: yup.string().email().required("Email is required"),
@@ -18,13 +21,16 @@ const ContactUs = () => {
   });
 
   const handleSubmit = async (values, { resetForm }) => {
+    setIsSubmitting(true); // Set form submission state to true
     try {
       await axios.post("http://localhost:9000/sendmail", values);
       resetForm();
-      toast.success("Thankyou for contacting us!"); // Show success toast
+      toast.success("Thank you for contacting us!"); // Show success toast
     } catch (error) {
       console.error(error);
       toast.error("Something went wrong"); // Show error toast
+    } finally {
+      setIsSubmitting(false); // Reset form submission state to false regardless of success or failure
     }
   };
 
@@ -129,8 +135,16 @@ const ContactUs = () => {
                     {touched.message && errors.message}
                   </Form.Control.Feedback>
                 </Form.Group>
-                <Button type="submit" className="button-class">
-                  Get in touch
+                <Button
+                  type="submit"
+                  className="button-class"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <Spinner animation="border" size="sm" />
+                  ) : (
+                    "Get in touch"
+                  )}
                 </Button>
               </Form>
             )}
