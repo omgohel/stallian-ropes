@@ -22,8 +22,12 @@ const ContactUs = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     setIsSubmitting(true); // Set form submission state to true
+    console.log(isSubmitting);
     try {
-      await axios.post("http://localhost:9000/sendmail", values);
+      await axios.post(
+        "https://stallian-ropes-backend.onrender.com/sendmail",
+        values
+      );
       resetForm();
       toast.success("Thank you for contacting us!"); // Show success toast
     } catch (error) {
