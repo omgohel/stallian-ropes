@@ -120,6 +120,10 @@ code {
   padding: 3rem !important;
 }
 
+.nets-responsive {
+  padding-top: 3rem;
+}
+
 /* Contact-us Css */
 .contact-responsive {
   padding: 3rem;
@@ -227,6 +231,12 @@ code {
 }
 /* Media query for medium screens */
 @media (max-width: 576px) {
+  /* .font-size-medium-nets {
+    font-size: 18px !important;
+  } */
+  .padding-bottom {
+    padding-bottom: 0rem !important;
+  }
   .width-50 {
     width: 100%;
   }
@@ -372,7 +382,8 @@ code {
 
   .remove-padding {
     text-align: center !important;
-    padding: 0% !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
 
   .custom-container {

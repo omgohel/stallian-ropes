@@ -11,7 +11,7 @@ const Products = () => {
   const productOne = {
     showTitle: true,
     productTitle: "ROPES",
-    productName: "HDPE Ropes :",
+    productName: "HDPE Ropes:",
     productDetails:
       "HDPE ropes are durable ropes with high quality and brighten colors. Water resistant and good abrasion. Good for fisherie sector and lots of industrial kind.",
     tableHeaders: [
@@ -54,7 +54,7 @@ const Products = () => {
   };
 
   const productTwo = {
-    productName: "PP ROPES(POLYPROPYLENE ROPE) : ",
+    productName: "PP ROPES(POLYPROPYLENE ROPE): ",
     productDetails:
       "Polypropylene rope are used for high breaking strength with UV stabilized. Mainly used in dry/wet cargo, submercible tow, cargo carry, yacht, fishing and many more sector. Floats well and with its chemical resist nature good for many industries. Available in size of 2mm -120mm of 3-strands, 4-strands, 8 & 12 -strands, with different colors and lining.",
     tableHeaders: [
@@ -97,7 +97,7 @@ const Products = () => {
   };
 
   const productThree = {
-    productName: "POLYESTER(NYLON/BRAIDED) : ",
+    productName: "POLYESTER(NYLON/BRAIDED): ",
     productDetails:
       "Polyester ropes available in size of 6-40 mm and with use of tremendous range. Polyester ropes are keenly used for boating/yachting applications and is great for anchor lines, mooring lines, fender lines, lifelines and hoisting and winching lines. Polyester ropes are also used for theatre applications quite often for stage rigging and curtain hoists etc.",
     tableHeaders: [
@@ -139,7 +139,7 @@ const Products = () => {
   };
 
   const productFour = {
-    productName: "PP MULTIFILLAMENT/COTTON ROPES: : ",
+    productName: "PP MULTIFILLAMENT/COTTON ROPES:",
     productDetails:
       "PP MULTIFILAMENT rope is widely used as a mooring line; it has the same strength either under wet conditions or normal conditions. It is easy operation, has chemical corrosion resistance, drains well, and keeps it in a dark place. ropes are soft, hold knots well, and are suitable for activities like camping, yachting and for hardwork. Their softness makes them suitable ropes for cable railings and industrial uses. They consist of a stronger kind of polypropylene composed of thin, soft fibers which looks similar to nylon. The basic colour is white and is available as twisted as well as braided ropes.",
     tableHeaders: [

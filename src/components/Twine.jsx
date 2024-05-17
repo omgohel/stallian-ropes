@@ -17,7 +17,7 @@ const Twine = ({ twineTypes, twineDetails }) => {
       <div className="row">
         <h2 className="fw-bold text-danger pt-5">TWINE</h2>
         {twineTypes.map((twine, index) => (
-          <div className="col-lg-4 p-5" key={index}>
+          <div className="col-lg-4 nets-responsive px-5" key={index}>
             <Carousel interval={2000} fade>
               {twine.images.map((item, imgIndex) => (
                 <Carousel.Item key={imgIndex}>

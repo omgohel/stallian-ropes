@@ -7,7 +7,7 @@ const Nets = ({ netTypes, productDetails }) => {
       <div className="row">
         <h2 className="fw-bold text-danger pt-5">NETS</h2>
         {netTypes.map((net, index) => (
-          <div className="col-lg-6 p-5" key={index}>
+          <div className="col-lg-6 nets-responsive px-5" key={index}>
             <Carousel interval={2000} fade>
               {net.images.map((item, imgIndex) => (
                 <Carousel.Item key={imgIndex}>
