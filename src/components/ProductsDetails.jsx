@@ -17,8 +17,8 @@ const ProductsDetails = ({
       <div
         className={
           showTitle
-            ? "row d-flex align-items-end p-5"
-            : "row d-flex align-items-end px-5"
+            ? "row d-flex align-items-end justify-content-center p-5"
+            : "row d-flex align-items-end justify-content-center px-5"
         }
       >
         {showTitle && <h2 className="fw-bold text-danger">{productTitle}</h2>}
@@ -66,7 +66,7 @@ const ProductsDetails = ({
             </div>
           </div>
         </div>
-        <div className="row pt-5 d-flex justify-content-around">
+        <div className="row pt-5">
           <div className="col-md-6">
             <h4 className="fw-bold text-secondary font-size-medium">
               Key features
@@ -85,7 +85,7 @@ const ProductsDetails = ({
               ))}
             </div>
           </div>
-          <div className="col-md-6 px-5 text-left small-display remove-padding">
+          <div className="col-md-6 text-left remove-padding">
             <h4 className="fw-bold text-secondary font-size-medium">
               Product details
             </h4>
