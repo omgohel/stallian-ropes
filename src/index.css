@@ -214,7 +214,7 @@ code {
 }
 
 .table-container {
-  max-height: 543px; /* Adjust the height as needed */
+  height: 543px; /* Adjust the height as needed */
 }
 
 /* Media query for medium screens */

@@ -1,35 +1,36 @@
 import React from "react";
 import { Carousel, Table } from "react-bootstrap";
 
-const ProductsDetails = () => {
-  const columnOne = ["3-1/2", "28", "78", "29100.98", "26190.89"];
-  const chooseUsArray = [
-    {
-      image: "/industry-focus/if2.jpeg",
-    },
-    {
-      image: "/industry-focus/if3.jpeg",
-    },
-    {
-      image: "/industry-focus/if4.jpeg",
-    },
-    {
-      image: "/industry-focus/if5.jpeg",
-    },
-  ];
+const ProductsDetails = ({
+  showTitle,
+  productTitle,
+  productName,
+  productDetails,
+  tableHeaders,
+  tableData,
+  carouselImages,
+  keyFeatures,
+  keyFeatureText,
+}) => {
   return (
     <div className="container font-size-small">
-      <div className="row d-flex align-items-end p-5">
-        <h2 className="fw-bold text-danger">ROPES</h2>
+      <div
+        className={
+          showTitle
+            ? "row d-flex align-items-end p-5"
+            : "row d-flex align-items-end px-5"
+        }
+      >
+        {showTitle && <h2 className="fw-bold text-danger">{productTitle}</h2>}
         <div className="col-md-6 mt-4 text-left custom-container">
           <h4 className="fw-bold text-secondary font-size-medium">
-            HDPE Ropes :
+            {productName}
           </h4>
           <Carousel interval={2000} className="" fade>
-            {chooseUsArray.map((item, index) => (
+            {carouselImages.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  src={item.image}
+                  src={item}
                   alt={`Slide ${index}`}
                   className="width-100 height-100"
                   style={{ borderRadius: "10px" }}
@@ -47,74 +48,19 @@ const ProductsDetails = () => {
               <Table responsive striped>
                 <thead>
                   <tr>
-                    <th>Cir. in Inches </th>
-                    <th>Dia in MM </th>
-                    <th>Wt / coil of 220 MTR </th>
-                    <th>Unspliced strength </th>
-                    <th>Eye spliced strength</th>
+                    {tableHeaders.map((header, index) => (
+                      <th key={index}>{header}</th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
-                  <tr>
-                    {columnOne.map((item, index) => (
-                      <td key={index}>{item}</td>
-                    ))}
-                  </tr>
+                  {tableData.map((row, rowIndex) => (
+                    <tr key={rowIndex}>
+                      {row.map((item, index) => (
+                        <td key={index}>{item}</td>
+                      ))}
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
@@ -126,30 +72,24 @@ const ProductsDetails = () => {
               Key features
             </h4>
             <div className="row">
-              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-3">
-                <img src="/product/key.jpg" />
-              </div>
-              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                <img src="/product/key.jpg" />
-              </div>
-              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                <img src="/product/key.jpg" />
-              </div>
-              <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                <img src="/product/key.jpg" />
-              </div>
+              {keyFeatures.map((src, index) => (
+                <div
+                  className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-3"
+                  key={index}
+                >
+                  <img src={src} className="img-fluid" />
+                  <p className="fw-bold text-secondary mt-1">
+                    {keyFeatureText[index]}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="col-md-6 px-5 text-left small-display remove-padding">
             <h4 className="fw-bold text-secondary font-size-medium">
               Product details
             </h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
-            </p>
+            <p>{productDetails}</p>
           </div>
         </div>
       </div>

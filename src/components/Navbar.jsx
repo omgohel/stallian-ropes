@@ -39,7 +39,7 @@ const Header = () => {
         expand="lg"
         className="shadow-sm p-4 navbar-overlay"
         style={{
-          backgroundColor: "#edededba",
+          backgroundColor: "rgba(237, 237, 237, 0.80)",
           borderRadius: "10px",
           position: "relative",
         }}
