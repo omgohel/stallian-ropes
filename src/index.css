@@ -231,9 +231,10 @@ code {
 }
 /* Media query for medium screens */
 @media (max-width: 576px) {
-  /* .font-size-medium-nets {
-    font-size: 18px !important;
-  } */
+  .remove-padding {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
   .padding-bottom {
     padding-bottom: 0rem !important;
   }

@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 
 const Yarn = ({ yarnImages, yarnDetails }) => {
   return (
-    <div className="container">
+    <div className="container" id="yarn">
       <div className="row d-flex align-items-center">
         <h2 className="fw-bold text-danger pt-5">YARN</h2>
         <div className="col-lg-6 p-5">
@@ -28,8 +28,8 @@ const Yarn = ({ yarnImages, yarnDetails }) => {
           ))}
         </div>
         <div className="col-lg-6">
-          <h3 className="fw-bold text-secondary">Product details</h3>
-          <p className="font-size-medium-nets">
+          <h4 className="fw-bold text-secondary">Product details</h4>
+          <p className="font-size-medium">
             {yarnDetails.charAt(0).toUpperCase() +
               yarnDetails.slice(1).toLowerCase()}
           </p>

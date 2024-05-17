@@ -13,7 +13,7 @@ const Twine = ({ twineTypes, twineDetails }) => {
     "Packing",
   ];
   return (
-    <div className="container">
+    <div className="container" id="twines">
       <div className="row">
         <h2 className="fw-bold text-danger pt-5">TWINE</h2>
         {twineTypes.map((twine, index) => (
@@ -36,8 +36,8 @@ const Twine = ({ twineTypes, twineDetails }) => {
           </div>
         ))}
         <div className="col-lg-12">
-          <h2 className="fw-bold text-secondary">Product details</h2>
-          <p className="font-size-medium-nets">
+          <h4 className="fw-bold text-secondary">Product details</h4>
+          <p className="font-size-medium">
             {twineDetails.charAt(0).toUpperCase() +
               twineDetails.slice(1).toLowerCase()}
           </p>

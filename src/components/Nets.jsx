@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 
 const Nets = ({ netTypes, productDetails }) => {
   return (
-    <div className="container">
+    <div className="container" id="nets">
       <div className="row">
         <h2 className="fw-bold text-danger pt-5">NETS</h2>
         {netTypes.map((net, index) => (
@@ -26,8 +26,8 @@ const Nets = ({ netTypes, productDetails }) => {
           </div>
         ))}
         <div className="col-lg-12">
-          <h2 className="fw-bold text-secondary">Product details</h2>
-          <p className="font-size-medium-nets">
+          <h4 className="fw-bold text-secondary">Product details</h4>
+          <p className="font-size-medium">
             {productDetails.charAt(0).toUpperCase() +
               productDetails.slice(1).toLowerCase()}
           </p>

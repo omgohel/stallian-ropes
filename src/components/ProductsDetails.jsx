@@ -13,7 +13,7 @@ const ProductsDetails = ({
   keyFeatureText,
 }) => {
   return (
-    <div className="container font-size-small">
+    <div className="container font-size-small" id="ropes">
       <div
         className={
           showTitle
@@ -85,7 +85,7 @@ const ProductsDetails = ({
               ))}
             </div>
           </div>
-          <div className="col-md-6 px-5 text-left small-display remove-padding">
+          <div className="col-md-6 text-left small-display remove-padding">
             <h4 className="fw-bold text-secondary font-size-medium">
               Product details
             </h4>
