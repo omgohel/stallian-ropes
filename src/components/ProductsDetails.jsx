@@ -17,8 +17,8 @@ const ProductsDetails = ({
       <div
         className={
           showTitle
-            ? "row d-flex align-items-end p-5"
-            : "row d-flex align-items-end px-5"
+            ? "row d-flex align-items-end justify-content-center padding-bottom p-5"
+            : "row d-flex align-items-end justify-content-center padding-bottom px-5"
         }
       >
         {showTitle && <h2 className="fw-bold text-danger">{productTitle}</h2>}
