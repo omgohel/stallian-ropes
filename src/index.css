@@ -221,6 +221,10 @@ code {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
 }
+
+.font-size-medium-nets {
+  font-size: 22px;
+}
 /* Media query for medium screens */
 @media (max-width: 576px) {
   .width-50 {
