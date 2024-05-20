@@ -37,7 +37,7 @@ const Service = () => {
           <Card
             key={index}
             style={{
-              width: "12rem",
+              width: "10rem",
               height: "14rem",
               backgroundColor: "#006BB5",
               margin: "10px",
