@@ -5,6 +5,7 @@ const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const containsProducts = location.pathname.includes("products");
+
   const scrolling = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -14,8 +15,15 @@ const Footer = () => {
       });
     }
   };
+
   const scrollToComponent = useCallback(
     (sectionId) => {
+      console.log(
+        "scrollToComponent called with sectionId:",
+        sectionId,
+        "containsProducts:",
+        containsProducts
+      );
       if (containsProducts) {
         navigate("/");
         setTimeout(() => {
@@ -27,6 +35,27 @@ const Footer = () => {
     },
     [containsProducts, navigate]
   );
+
+  const scrollToProductComponent = useCallback(
+    (sectionId) => {
+      console.log(
+        "scrollToProductComponent called with sectionId:",
+        sectionId,
+        "containsProducts:",
+        containsProducts
+      );
+      if (!containsProducts) {
+        navigate("/products");
+        setTimeout(() => {
+          scrolling(sectionId);
+        }, 100);
+      } else {
+        scrolling(sectionId);
+      }
+    },
+    [containsProducts, navigate]
+  );
+
   return (
     <div className="footer-bg p-5">
       <div className="container">
@@ -64,9 +93,30 @@ const Footer = () => {
               </div>
               <div className="col-md-4 col-lg-4 mb-4">
                 <h5 className="font-white fw-bold">Products</h5>
-                <h6 className="font-white fw-bold mt-4 cursor">Ropes</h6>
-                <h6 className="font-white fw-bold mt-4 cursor">Nets</h6>
-                <h6 className="font-white fw-bold mt-4 cursor">Twines</h6>
+                <h6
+                  className="font-white fw-bold mt-4 cursor"
+                  onClick={() => scrollToProductComponent("ropes")}
+                >
+                  Ropes
+                </h6>
+                <h6
+                  className="font-white fw-bold mt-4 cursor"
+                  onClick={() => scrollToProductComponent("nets")}
+                >
+                  Nets
+                </h6>
+                <h6
+                  className="font-white fw-bold mt-4 cursor"
+                  onClick={() => scrollToProductComponent("twines")}
+                >
+                  Twine
+                </h6>
+                <h6
+                  className="font-white fw-bold mt-4 cursor"
+                  onClick={() => scrollToProductComponent("yarn")}
+                >
+                  Yarn
+                </h6>
               </div>
             </div>
           </div>
