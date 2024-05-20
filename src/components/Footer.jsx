@@ -62,12 +62,13 @@ const Footer = () => {
         <div className="row d-flex align-items-center">
           <div className="col-lg-8 col-md-8">
             <div className="row">
-              <div className="col-md-4 col-lg-4 mb-4">
+              <div className="col-md-4 col-lg-4 mb-4 cursor">
                 <img
                   src="/footer/footer.svg"
                   alt="footer"
                   width={120}
                   height={120}
+                  onClick={() => scrollToComponent("home")}
                 />
               </div>
               <div className="col-md-4 col-lg-4 mb-4">
