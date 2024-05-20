@@ -80,9 +80,9 @@ const IndustryFocus = () => {
                   </React.Fragment>
                 ))}
               </Card.Text>
-              <Card.Link href="#" className="text-white">
+              {/* <Card.Link href="#" className="text-white">
                 Read More
-              </Card.Link>
+              </Card.Link> */}
             </div>
           </Card>
         ))}
