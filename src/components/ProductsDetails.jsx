@@ -17,8 +17,8 @@ const ProductsDetails = ({
       <div
         className={
           showTitle
-            ? "row d-flex align-items-end justify-content-center padding-bottom p-5"
-            : "row d-flex align-items-end justify-content-center padding-bottom px-5"
+            ? "row d-flex align-items-start justify-content-center padding-bottom px-5 pt-5"
+            : "row d-flex align-items-start justify-content-center padding-bottom px-5"
         }
       >
         {showTitle && <h2 className="fw-bold text-danger">{productTitle}</h2>}
@@ -39,7 +39,7 @@ const ProductsDetails = ({
             ))}
           </Carousel>
         </div>
-        <div className="col-md-6 custom-container small-display">
+        <div className="col-md-6 mt-4 custom-container small-display">
           <div className="col-md-12 table-container ">
             <h4 className="fw-bold text-secondary mb-3 font-size-medium">
               Product Specifications
