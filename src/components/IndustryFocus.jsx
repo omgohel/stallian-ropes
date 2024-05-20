@@ -6,12 +6,12 @@ const IndustryFocus = () => {
     {
       image: "/industry-focus/if1.jpeg",
       heading: "Fishing & Aquaculture",
-      subtitle: "Providing Great Breeding Environment",
+      subtitle: "Providing Great Breeding\nEnvironment",
     },
     {
       image: "/industry-focus/if2.jpeg",
       heading: "Industrial",
-      subtitle: "Commitment For Our Industrial Applications",
+      subtitle: "Commitment For Our Industrial\nApplications",
     },
     {
       image: "/industry-focus/if3.jpeg",
@@ -21,7 +21,7 @@ const IndustryFocus = () => {
     {
       image: "/industry-focus/if4.jpeg",
       heading: "Yachting",
-      subtitle: "Engineered Perfection For Your Yacht",
+      subtitle: "Engineered Perfection\nFor Your Yacht",
     },
     {
       image: "/industry-focus/if5.jpeg",
@@ -73,7 +73,12 @@ const IndustryFocus = () => {
             >
               <Card.Title>{item.heading}</Card.Title>
               <Card.Text style={{ fontSize: "13px" }}>
-                {item.subtitle}
+                {item.subtitle.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
               </Card.Text>
               <Card.Link href="#" className="text-white">
                 Read More
