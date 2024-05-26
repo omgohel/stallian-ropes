@@ -51,7 +51,7 @@ const Header = () => {
                 alt=""
                 width={130}
                 height={130}
-                src="/stallion-ropes.png"
+                src="/stallian-ropes.png"
                 className="d-inline-block align-top brand-image-overlay"
               />
             </div>

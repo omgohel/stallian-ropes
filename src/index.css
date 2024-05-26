@@ -27,11 +27,11 @@ code {
   position: absolute;
   width: 100%;
   z-index: 1000; /* Ensure the navbar is on top of the carousel */
-  padding: 3rem; /* Adjust padding as needed */
+  padding: 1.5rem; /* Adjust padding as needed */
 }
 
 .navbar-overlay {
-  top: 0;
+  top: 0; 
 }
 
 .brand-image-overlay {
@@ -79,7 +79,7 @@ code {
 
 /* Caresoul Css */
 .carousel-image {
-  height: 720px;
+  height: 650px;
 }
 
 .custom-caresoul .carousel-indicators {
