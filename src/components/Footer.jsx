@@ -132,7 +132,7 @@ const Footer = () => {
                 style={{ color: "white" }}
               />
               <h6 className="font-white ms-2 mb-0">
-                Kohinoor Ropes Pvt. Ltd. 360/A , G.I.D.C CHITRA , BHAVNAGAR-364004, GUJARAT, INDIA.
+                STALLION ROPES PVT. LTD. 360/A , G.I.D.C CHITRA , BHAVNAGAR-364004, GUJARAT, INDIA.
               </h6>
             </div>
             <div className="d-flex align-items-center mt-4">
