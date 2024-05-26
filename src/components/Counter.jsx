@@ -7,10 +7,7 @@ const CounterCard = ({ image, title, count, subTitle, isLast }) => {
   const [ref, inView] = useInView();
 
   return (
-    <Card
-      className={`custom-card ${inView && !isLast ? "custom-card-border" : ""}`}
-      ref={ref}
-    >
+    <Card className={`custom-card ${inView && !isLast ? "custom-card-border" : ""}`} ref={ref}>
       <div className="d-flex justify-content-center card-image">
         <Card.Img src={image} style={{ height: "80px", width: "80px" }} />
       </div>
@@ -30,13 +27,13 @@ const Counter = () => {
     {
       image: "/counter/count1.png",
       title: "Experience",
-      count: 37,
+      count: 34,
       subTitle: "Years",
     },
     {
       image: "/counter/count2.png",
       title: "Industry",
-      count: 10,
+      count: 6,
       subTitle: "Sectors",
     },
     {
@@ -56,11 +53,7 @@ const Counter = () => {
   return (
     <div className="d-flex justify-content-center counter-inner">
       {counterCardArray.map((item, index) => (
-        <CounterCard
-          {...item}
-          key={index}
-          isLast={index === counterCardArray.length - 1}
-        />
+        <CounterCard {...item} key={index} isLast={index === counterCardArray.length - 1} />
       ))}
     </div>
   );

@@ -64,10 +64,10 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-4 col-lg-4 mb-4 cursor">
                 <img
-                  src="/footer/footer.svg"
+                  src="/stallion-ropes.png"
                   alt="footer"
-                  width={120}
-                  height={120}
+                  width={130}
+                  height={130}
                   onClick={() => scrollToComponent("home")}
                 />
               </div>
@@ -132,9 +132,7 @@ const Footer = () => {
                 style={{ color: "white" }}
               />
               <h6 className="font-white ms-2 mb-0">
-                Kohinoor Ropes Pvt. Ltd. Office No B7, B8 2nd Floor, Prozone
-                Trade Center, Cidco, Ch. Sambhajinagar, Aurangabad 431006
-                Maharashatra, India
+                Kohinoor Ropes Pvt. Ltd. 360/A , G.I.D.C CHITRA , BHAVNAGAR-364004, GUJARAT, INDIA.
               </h6>
             </div>
             <div className="d-flex align-items-center mt-4">
@@ -145,9 +143,7 @@ const Footer = () => {
                 height={20}
                 style={{ color: "white" }}
               />
-              <h6 className="font-white ms-2 mb-0">
-                +91 1234567890, +91 0987654321
-              </h6>
+              <h6 className="font-white ms-2 mb-0">+91 9664624116, +91 9974282410</h6>
             </div>
             <div className="d-flex align-items-center mt-4">
               <img
@@ -157,7 +153,9 @@ const Footer = () => {
                 height={20}
                 style={{ color: "white" }}
               />
-              <h6 className="font-white ms-2 mb-0">info@kohinoorropes.com</h6>
+              <h6 className="font-white ms-2 mb-0">
+                sales@stallionropes.com, mmexports999@gmail.com
+              </h6>
             </div>
           </div>
         </div>

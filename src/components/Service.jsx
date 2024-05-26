@@ -44,11 +44,7 @@ const Service = () => {
             }}
             className="d-flex flex-column align-items-center p-2 card-style"
           >
-            <Card.Img
-              variant="top"
-              src={item.image}
-              style={{ width: "100px", height: "100px" }}
-            />
+            <Card.Img variant="top" src={item.image} style={{ width: "100px", height: "100px" }} />
             <Card.Body>
               <Card.Title className="button-class">{item.text}</Card.Title>
             </Card.Body>
@@ -56,14 +52,12 @@ const Service = () => {
         ))}
       </div>
       <div className="p-4 service-para">
-        <h3>
-          40 Years Of Servicing The High-Quality Cordage, Nets & Rope Industry
-        </h3>
+        <h3>34 Years Of Servicing The High-Quality Cordage, Nets & Rope Industry</h3>
         <p className="px-5 mt-4 service-details">
-          Spread across 5 continents & Powered by Proprietary R&D
-          Infrastructure, Kohinoor Rope is a name recognized in domestic &
-          international markets. Operating since 1985. We have a long record of
-          product excellence strong R & D, and diligent quality control
+          Est in 1990, the company today is known for providing world class innovative solutions in
+          high performance & premium quality ropes like hdpe, pp and etc, also known for strong
+          aquaculture nets, fishing nets, sports nets, safety nets, agriculture nets, coated
+          fabrics, synthetic ropes and twine .
         </p>
         {/* <Button className="button-class" variant="info">
           Know more

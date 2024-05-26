@@ -39,7 +39,7 @@ const Header = () => {
         expand="lg"
         className="shadow-sm p-4 navbar-overlay"
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgba(237, 237, 237, 0.80)",
           borderRadius: "10px",
           position: "relative",
         }}
@@ -51,7 +51,7 @@ const Header = () => {
                 alt=""
                 width={130}
                 height={130}
-                src="/maruti.svg"
+                src="/stallion-ropes.png"
                 className="d-inline-block align-top brand-image-overlay"
               />
             </div>
