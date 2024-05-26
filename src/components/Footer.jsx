@@ -59,7 +59,7 @@ const Footer = () => {
   return (
     <div className="footer-bg p-5">
       <div className="container">
-        <div className="row d-flex align-items-center border-bottom">
+        <div className="row d-flex align-items-center">
           <div className="col-lg-8 col-md-8">
             <div className="row">
               <div className="col-md-4 col-lg-4 mb-4 cursor">
@@ -159,9 +159,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-white text-right mt-2" style={{ fontSize: "12px" }}>
-          Managed by arrowbraids & twine pvt. Ltd.{" "}
-        </p>
+        <div className="border-top mt-4">
+          <p className="footer-brand text-white">Managed by arrowbraids & twine pvt. Ltd. </p>
+        </div>
       </div>
     </div>
   );
