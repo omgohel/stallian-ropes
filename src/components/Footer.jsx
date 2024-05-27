@@ -129,7 +129,7 @@ const Footer = () => {
                 style={{ color: "white" }}
               />
               <h6 className="font-white ms-2 mb-0">
-                STALLION ROPES PVT. LTD. 360/A , G.I.D.C CHITRA , BHAVNAGAR-364004, GUJARAT, INDIA.
+                Stallion Ropes Pvt. Ltd. 360/A, G.I.D.C Chitra, Bhavnagar-364004, Gujrat, India.
               </h6>
             </div>
             <div className="d-flex align-items-center mt-4">
