@@ -405,6 +405,11 @@ code {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+
+  .image-responsive{
+    width: 200px;
+    height: 200px;
+  }
   .carousel-image {
     height: 455px;
   }
@@ -532,6 +537,10 @@ code {
 
 /* Media query for large screens */
 @media (min-width: 769px) and (max-width: 992px) {
+  .image-responsive{
+    width: 200px;
+    height: 200px;
+  }
   .overlay-navbar {
     .container {
       .navbar-brand {
@@ -582,10 +591,6 @@ code {
   }
   .choose-us-inner {
     padding-bottom: 0rem !important;
-  }
-
-  .contact-responsive {
-    padding-bottom: 0rem;
   }
 
   .card-responsive {
@@ -658,10 +663,6 @@ code {
   }
   .choose-us-inner {
     padding-bottom: 0rem !important;
-  }
-
-  .contact-responsive {
-    padding-bottom: 0rem;
   }
 
   .custom-container {

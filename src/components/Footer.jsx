@@ -60,18 +60,17 @@ const Footer = () => {
     <div className="footer-bg p-5">
       <div className="container">
         <div className="row d-flex align-items-center">
-          <div className="col-lg-8 col-md-8">
-            <div className="row">
-              <div className="col-md-4 col-lg-4 mb-4 cursor">
+              <div className="col-12 col-sm-4 col-md-4 col-lg-2 mb-4 cursor">
                 <img
                   src="/footer/footer.jpeg"
                   alt="footer"
                   width={250}
                   height={250}
                   onClick={() => scrollToComponent("home")}
+                  className="image-responsive"
                 />
               </div>
-              <div className="col-md-4 col-lg-4 mb-4">
+              <div className="col-6 col-sm-4 col-md-4 col-lg-3 mb-4">
                 <h5 className="font-white fw-bold">Quick Links</h5>
                 <h6
                   className="font-white fw-bold mt-4 cursor"
@@ -92,7 +91,7 @@ const Footer = () => {
                   Contact Us
                 </h6>
               </div>
-              <div className="col-md-4 col-lg-4 mb-4">
+              <div className="col-6 col-sm-4 col-md-4 col-lg-3 mb-4">
                 <h5 className="font-white fw-bold">Products</h5>
                 <h6
                   className="font-white fw-bold mt-4 cursor"
@@ -119,9 +118,7 @@ const Footer = () => {
                   Yarn
                 </h6>
               </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 text-left">
+          <div className="col-12 col-sm-12 col-lg-4 col-md-12 text-left">
             <h4 className="font-white">Corporate Office</h4>
             <div className="d-flex mb-3 text-left mt-4">
               <img

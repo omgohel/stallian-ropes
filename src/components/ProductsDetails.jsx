@@ -42,7 +42,7 @@ const ProductsDetails = ({
         <div className="col-md-6 mt-4 custom-container small-display">
           <div className="col-md-12 table-container ">
             <h4 className="fw-bold text-secondary mb-3 font-size-medium">
-              Product Specifications
+              Technical Data Chart
             </h4>
             <div>
               <Table responsive striped>

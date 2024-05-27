@@ -22,7 +22,7 @@ const ChooseUs = () => {
         <div>
           <h2>Why Choose Us</h2>
           <p>
-            Stallion rope is well known for its quality and fast delivery since 1990. We provide
+            Stallion ropes is well known for its quality and fast delivery since 1990. We provide
             multiple exports in monthly base. Also make specific products as per customers’
             requirements and in less time period.
           </p>
