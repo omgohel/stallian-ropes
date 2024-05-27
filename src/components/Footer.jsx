@@ -115,7 +115,7 @@ const Footer = () => {
                   className="font-white fw-bold mt-4 cursor"
                   onClick={() => scrollToProductComponent("yarn")}
                 >
-                  Yarn
+                  Yarns
                 </h6>
               </div>
           <div className="col-12 col-sm-12 col-lg-4 col-md-12 text-left">
