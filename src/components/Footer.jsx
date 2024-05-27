@@ -109,7 +109,7 @@ const Footer = () => {
                   className="font-white fw-bold mt-4 cursor"
                   onClick={() => scrollToProductComponent("twines")}
                 >
-                  Twine
+                  Twines
                 </h6>
                 <h6
                   className="font-white fw-bold mt-4 cursor"
