@@ -205,6 +205,12 @@ code {
   }
 }
 
+.custom-container{
+  .carousel-inner {
+    border-radius: 10px !important;
+  }
+}
+
 .product-carousel {
   .carousel-control-prev {
     display: none !important;
@@ -213,6 +219,13 @@ code {
     display: none !important;
   }
 }
+
+.product-images {
+  width: 600px; 
+  height: 500px;
+  object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
+}
+
 
 /* .product-image {
   height: 120px;
@@ -402,6 +415,13 @@ code {
   .table-container {
     height: 355px; /* Adjust the height as needed */
   }
+
+
+  .product-images {
+    width: 450px; 
+    height: 300px;
+    object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -533,6 +553,12 @@ code {
   .font-size-medium {
     font-size: 16px;
   }
+
+  .product-images {
+    width: 450px; 
+    height: 300px;
+    object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
+  }
 }
 
 /* Media query for large screens */
@@ -622,6 +648,12 @@ code {
   .table-container {
     max-height: 385px; /* Adjust the height as needed */
   }
+
+  .product-images {
+    width: 450px; 
+    height: 300px;
+    object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
+  }
 }
 
 /* Media query for extra large screens */
@@ -690,4 +722,11 @@ code {
       height: 500px !important;
     }
   }
+
+  .product-images {
+    width: 500px; 
+    height: 400px;
+    object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
+  }
+  
 }

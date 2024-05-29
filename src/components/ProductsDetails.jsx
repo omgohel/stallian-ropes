@@ -26,15 +26,16 @@ const ProductsDetails = ({
           <h4 className="fw-bold text-secondary font-size-medium">
             {productName}
           </h4>
-          <Carousel interval={2000} className="" fade>
+          <Carousel interval={2000} fade className="rounded">
             {carouselImages.map((item, index) => (
               <Carousel.Item key={index}>
-                <img
-                  src={item}
-                  alt={`Slide ${index}`}
-                  className="width-100 height-100"
-                  style={{ borderRadius: "10px" }}
-                />
+                <div>
+                  <img
+                    src={item}
+                    alt={`Slide ${index}`}
+                    className="product-images"
+                  />
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>

@@ -34,10 +34,10 @@ const Products = () => {
       ["14", "9.50", "8.68", "<40", "-", "-"],
     ],
     carouselImages: [
-      "/industry-focus/if2.jpeg",
-      "/industry-focus/if3.jpeg",
-      "/industry-focus/if4.jpeg",
-      "/industry-focus/if5.jpeg",
+      "/hdpe/HDPE-1.jpeg",
+      "/hdpe/HDPE-2.jpeg",
+      "/hdpe/HDPE-3.jpeg",
+      "/hdpe/HDPE-4.jpeg",
     ],
     keyFeatures: [
       "/product/key-1.jpg",
