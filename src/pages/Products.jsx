@@ -77,10 +77,10 @@ const Products = () => {
       ["16", "25.5", "3824", "<120", "-", "-"],
     ],
     carouselImages: [
-      "/industry-focus/if2.jpeg",
-      "/industry-focus/if3.jpeg",
-      "/industry-focus/if4.jpeg",
-      "/industry-focus/if5.jpeg",
+      "/pp/PP-1.jpeg",
+      "/pp/PP-2.jpeg",
+      "/pp/PP-3.jpeg",
+      "/pp/PP-4.jpeg",
     ],
     keyFeatures: [
       "/product/key-1.jpg",
