@@ -60,64 +60,64 @@ const Footer = () => {
     <div className="footer-bg p-5">
       <div className="container">
         <div className="row d-flex align-items-center">
-              <div className="col-12 col-sm-4 col-md-4 col-lg-2 mb-4 cursor">
-                <img
-                  src="/footer/footer.jpeg"
-                  alt="footer"
-                  width={250}
-                  height={250}
-                  onClick={() => scrollToComponent("home")}
-                  className="image-responsive"
-                />
-              </div>
-              <div className="col-6 col-sm-4 col-md-4 col-lg-3 mb-4">
-                <h5 className="font-white fw-bold">Quick Links</h5>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToComponent("about")}
-                >
-                  About Us
-                </h6>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToComponent("infrastructure")}
-                >
-                  Infrastructure
-                </h6>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToComponent("contactUs")}
-                >
-                  Contact Us
-                </h6>
-              </div>
-              <div className="col-6 col-sm-4 col-md-4 col-lg-3 mb-4">
-                <h5 className="font-white fw-bold">Products</h5>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToProductComponent("ropes")}
-                >
-                  Ropes
-                </h6>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToProductComponent("nets")}
-                >
-                  Nets
-                </h6>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToProductComponent("twines")}
-                >
-                  Twines
-                </h6>
-                <h6
-                  className="font-white fw-bold mt-4 cursor"
-                  onClick={() => scrollToProductComponent("yarn")}
-                >
-                  Yarns
-                </h6>
-              </div>
+          <div className="col-12 col-sm-4 col-md-4 col-lg-2 mb-4 cursor">
+            <img
+              src="/footer/footer.jpeg"
+              alt="footer"
+              width={250}
+              height={250}
+              onClick={() => scrollToComponent("home")}
+              className="image-responsive"
+            />
+          </div>
+          <div className="col-6 col-sm-4 col-md-4 col-lg-3 mb-4">
+            <h5 className="font-white fw-bold">Quick Links</h5>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToComponent("about")}
+            >
+              About Us
+            </h6>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToComponent("infrastructure")}
+            >
+              Infrastructure
+            </h6>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToComponent("contactUs")}
+            >
+              Contact Us
+            </h6>
+          </div>
+          <div className="col-6 col-sm-4 col-md-4 col-lg-3 mb-4">
+            <h5 className="font-white fw-bold">Products</h5>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToProductComponent("ropes")}
+            >
+              Ropes
+            </h6>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToProductComponent("nets")}
+            >
+              Nets
+            </h6>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToProductComponent("twines")}
+            >
+              Twines
+            </h6>
+            <h6
+              className="font-white fw-bold mt-4 cursor"
+              onClick={() => scrollToProductComponent("yarn")}
+            >
+              Yarns
+            </h6>
+          </div>
           <div className="col-12 col-sm-12 col-lg-4 col-md-12 text-left">
             <h4 className="font-white">Corporate Office</h4>
             <div className="d-flex mb-3 text-left mt-4">
@@ -129,7 +129,8 @@ const Footer = () => {
                 style={{ color: "white" }}
               />
               <h6 className="font-white ms-2 mb-0">
-                Stallion Ropes Pvt. Ltd. 360/A, G.I.D.C Chitra, Bhavnagar-364004, Gujrat, India.
+                Stallion Ropes Pvt. Ltd. 360/A, G.I.D.C Chitra,
+                Bhavnagar-364004, Gujrat, India.
               </h6>
             </div>
             <div className="d-flex align-items-center mt-4">
@@ -140,7 +141,9 @@ const Footer = () => {
                 height={20}
                 style={{ color: "white" }}
               />
-              <h6 className="font-white ms-2 mb-0">+91 9664624116, +91 9974282410</h6>
+              <h6 className="font-white ms-2 mb-0">
+                +91 9664624116, +91 9974282410
+              </h6>
             </div>
             <div className="d-flex align-items-center mt-4">
               <img
@@ -157,7 +160,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-top mt-4">
-          <p className="footer-brand text-white">Managed by arrowbraids & twine pvt. Ltd. </p>
+          <p className="footer-brand text-white">
+            Managed by arrowbraids & twine pvt. Ltd.{" "}
+          </p>
         </div>
       </div>
     </div>

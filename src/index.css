@@ -223,9 +223,8 @@ code {
 .product-images {
   width: 600px; 
   height: 500px;
-  object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
+  object-fit: fill;
 }
-
 
 /* .product-image {
   height: 120px;
@@ -555,8 +554,8 @@ code {
   }
 
   .product-images {
-    width: 450px; 
-    height: 300px;
+    width: 289px; 
+    height: 280px;
     object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
   }
 }
@@ -650,8 +649,8 @@ code {
   }
 
   .product-images {
-    width: 450px; 
-    height: 300px;
+    width: 408px; 
+    height: 350px;
     object-fit: fill; /* This will crop and zoom the image to fill the dimensions */
   }
 }
