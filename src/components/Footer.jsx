@@ -129,8 +129,7 @@ const Footer = () => {
                 style={{ color: "white" }}
               />
               <h6 className="font-white ms-2 mb-0">
-                Stallion Ropes Pvt. Ltd. 360/A, G.I.D.C Chitra,
-                Bhavnagar-364004, Gujrat, India.
+                Stallion Ropes Pvt. Ltd. 360/A, G.I.D.C Chitra, Bhavnagar-364004, Gujrat, India.
               </h6>
             </div>
             <div className="d-flex align-items-center mt-4">
@@ -141,9 +140,7 @@ const Footer = () => {
                 height={20}
                 style={{ color: "white" }}
               />
-              <h6 className="font-white ms-2 mb-0">
-                +91 9664624116, +91 9974282410
-              </h6>
+              <h6 className="font-white ms-2 mb-0">+91 9664624116, +91 7405863864</h6>
             </div>
             <div className="d-flex align-items-center mt-4">
               <img
@@ -160,9 +157,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-top mt-4">
-          <p className="footer-brand text-white">
-            Managed by arrowbraids & twine pvt. Ltd.{" "}
-          </p>
+          <p className="footer-brand text-white">Billing by arrowbraids & twine pvt. Ltd. </p>
         </div>
       </div>
     </div>
